@@ -19,6 +19,9 @@ btn.addEventListener("click", () => {
   }, 3000);
 });
 iconCopy.addEventListener("click", () => {
+  if (!inputContainer.value) {
+    notificationContainer.innerText = `nothing here`;
+  }
   inputContainer.select();
   inputContainer.setSelectionRange(0, 9999);
   navigator.clipboard.writeText(inputContainer.value);
