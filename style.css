@@ -17,7 +17,16 @@ body {
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.7);
   margin: 2rem;
 }
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  color: whitesmoke;
+}
 
+span {
+  color: #0049b7;
+}
 .input-container {
   border: 2px solid black;
   padding: 2rem;
@@ -65,9 +74,10 @@ body {
 .notification {
   width: 30rem;
   background-color: rgb(0, 255, 98);
-  padding: 2rem 6rem;
+  padding: 2rem 3rem;
   border-radius: 10px;
   font-size: 1.5rem;
+  letter-spacing: 2px;
   position: fixed;
   right: 25px;
   bottom: 2rem;

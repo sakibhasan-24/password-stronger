@@ -13,7 +13,10 @@ btn.addEventListener("click", () => {
     password += selectedText.substring(randomPosition, randomPosition + 1);
   }
   inputContainer.value = password;
-  notificationContainer.innerText = password;
+  notificationContainer.innerText = `${password} copied successfully!`;
+  setTimeout(() => {
+    notificationContainer.classList.add("active");
+  }, 3000);
 });
 iconCopy.addEventListener("click", () => {
   inputContainer.select();
