@@ -1,5 +1,7 @@
 const btn = document.querySelector(".btn");
 const inputContainer = document.getElementById("input");
+const iconCopy = document.querySelector(".icon");
+const notificationContainer = document.querySelector(".notification");
 const selectedText = "1234567890!@#$%^&*()_}:><][mnbvcxzasdfghjklpoiuytrewq";
 // console.log(selectedText.substring(10, 11));
 const numberOfPasswordLength = 12;
@@ -11,4 +13,11 @@ btn.addEventListener("click", () => {
     password += selectedText.substring(randomPosition, randomPosition + 1);
   }
   inputContainer.value = password;
+  notificationContainer.innerText = password;
+});
+iconCopy.addEventListener("click", () => {
+  inputContainer.select();
+  inputContainer.setSelectionRange(0, 9999);
+  navigator.clipboard.writeText(inputContainer.value);
+  notificationContainer.classList.remove("active");
 });

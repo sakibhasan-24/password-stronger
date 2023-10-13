@@ -69,13 +69,14 @@ body {
   border-radius: 10px;
   font-size: 1.5rem;
   position: fixed;
-  left: 20px;
+  right: 25px;
   bottom: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.7s;
 }
 .active.notification {
-  right: -40rem;
+  right: -45rem;
 }
